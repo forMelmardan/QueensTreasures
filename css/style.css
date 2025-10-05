@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Runtti';
+    src: url('../fonts/Runtti\ SP.ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background{
+    z-index: -1;
+}
+
+.background img{
+    width: 390px;
+}
+
