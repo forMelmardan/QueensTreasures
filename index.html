@@ -3,17 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Сокровища моей королевы</title>
+    <title>Сокровища королевы</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/runes.js" defer></script>
 </head>
 <body>
     <div class="background">
         <div class="background__header">
             <img src="img/layout/header.png" alt="">
         </div>
-        <div class="background__main"></div>
+        <div class="background__main">
+            <img src="img/layout/main.png" alt="">
+        </div>
         <div class="background__footer"></div>
     </div>
-    <div class="counter"></div>
+
+    <h1>Сокровища королевы</h1>
+
+    <div class="counter">
+        <img src="img/layout/counter.png" alt="" class="counter__background">
+        <div class="counter__info">
+            <div class="counter__text shovel-counter">Лопаты: 25</div>
+            <div class="counter__text bat-counter">Мышки: 0</div>
+        </div>
+    </div>
+
+    <div class="game">
+        <div class="rune">
+            <img src="img/runes/1.png" alt="" class="rune__img">
+            <div class="rune__bat">
+                <img src="img/icons/bat.png" alt="" class="rune__bat-img">
+                <div class="bat-text">10</div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

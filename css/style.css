@@ -2,18 +2,128 @@
     font-family: 'Runtti';
     src: url('../fonts/Runtti\ SP.ttf');
 }
+@font-face {
+    font-family: 'Wolgadeutsche';
+    src: url('../fonts/Wolgadeutsche.otf');
+}
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.background{
-    z-index: -1;
-}
-
-.background img{
+body {
     width: 390px;
 }
 
+.background {
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.background img {
+    filter: brightness(.8);
+    user-select: none;
+    pointer-events: none;
+    width: 390px;
+}
+.background__header{
+    height: 390px;
+}
+
+.counter {
+    height: 56px;
+    position: relative;
+    border-top: 1px solid transparent;
+    width: 300px;
+    margin: auto;
+}
+
+.counter__text {
+    font-size: 15px;
+    font-family: "Runtti";
+    z-index: 99;
+    color: #ffdddd;
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff9d9a, 0 0 0.5em #ff9d9a, 0 0 0.1em #ff9d9a;
+}
+
+.counter__info {
+    padding: 0 46px 0 56px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.counter__background {
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+h1{
+    margin: auto;
+    font-family: "Wolgadeutsche";
+    text-transform: uppercase;
+    font-size: 40px;
+    width: 300px;
+    margin-top: 20px;
+    text-align: center;
+    color: #f19797;
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #b32828, 0 0 0.5em #b32828, 0 0 0.1em #b32828;
+}
+
+.game{
+    margin: auto;
+    width: 350px;
+    background-image: url("../img/runes/frame.png");
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 10px;
+    background-size: 100% 100%;
+    padding: 50px;
+    height: 350px;
+}
+
+.rune{
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1;
+}
+.rune__img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.rune__bat{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url("../img/runes/background.png");
+    background-size: 100% 100%;
+}
+
+.rune__bat{
+    color: #ffdddd;
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff9d9a, 0 0 0.5em #ff9d9a, 0 0 0.1em #ff9d9a;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.rune__bat-img{
+    width: 30px;
+}
