@@ -25,8 +25,8 @@ function setSizes() {
 window.onload = () => {
     document.querySelectorAll(".curtain-back, .curtain-front").forEach(e => {
         e.classList.add("fade-Out")
+        document.querySelector("main").style = `opacity:1;`
     });
-    document.querySelector("main").style = `opacity:1;`
     setTimeout(() => {
         document.querySelector(".curtain").remove()
         document.onscroll = ()=>{}
