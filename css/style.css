@@ -29,7 +29,7 @@ body {
 
 main{
     opacity: 0;
-    transition: 1s;
+    transition: opacity 1s;
     overflow-x: hidden;
     transform-origin: top left;
     height: 100%;

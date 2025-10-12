@@ -8,6 +8,14 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="js/runes.js" defer></script>
     <script src="js/main.js" defer></script>
+    <script defer>
+        window.scrollTo(0, 0)
+        let position = { x: window.pageXOffset, y: window.pageYOffset }
+        document.onscroll = () => {
+            window.scrollTo(position.x, position.y)
+        }
+
+    </script>
 </head>
 
 <body>
