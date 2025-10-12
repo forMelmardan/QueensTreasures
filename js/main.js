@@ -3,7 +3,7 @@ window.onresize = () => {
 }
 
 
-function setSizes() {    
+function setSizes() {
     document.querySelector("main").style.scale = window.innerWidth / 390
     if (window.innerWidth >= window.innerHeight) {
         document.querySelectorAll(".curtain-back").forEach(e => {
