@@ -376,7 +376,7 @@ h3 {
     font-family: "Wolgadeutsche";
     font-size: 24px;
     color: #f19797;
-    text-shadow: 0 0 2px, 0 0 1em #b32828, 0 0 0.5em #B3282A, 0 0 0.1em #b32828;
+    text-shadow: 0 0 2px, 0 0 .2em #b32828, 0 0 0.3em #B3282A, 0 0 0.1em #b32828;
 }
 
 
