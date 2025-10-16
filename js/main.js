@@ -29,3 +29,7 @@ window.onload = () => {
         document.onscroll = () => { }
     }, 3000);
 }
+
+document.querySelector("#reboot").addEventListener('click', function(){
+  reboot()
+});
