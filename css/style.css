@@ -404,7 +404,7 @@ h3 {
 }
 
 .shop {
-    padding: 0 50px;
+    padding: 0 50px 30px;
 }
 
 .shop__container {
@@ -456,6 +456,7 @@ h3 {
 }
 
 .modal__input{
+    margin: 10px 0;
     font-family: "Runtti";
     background-color: #3e1621;
     padding: 5px 10px;
