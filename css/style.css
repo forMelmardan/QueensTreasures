@@ -392,12 +392,76 @@ h3 {
     aspect-ratio: 1;
 }
 
-.modal h2{
+.modal h2 {
     margin-top: 20px;
 }
-.present__text{
+
+.present__text {
     font-size: 26px;
     font-family: "Runtti";
     color: #250000;
     margin-bottom: 10px;
+}
+
+.shop {
+    padding: 0 50px;
+}
+
+.shop__container {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.shop__item.bought{
+    pointer-events: none;
+    filter: saturate(0);
+}
+.shop__item-img {
+    width: 100%;
+    aspect-ratio: 1;
+}
+
+.shop__item-title {
+    text-align: center;
+    font-family: "Runtti";
+    font-size: 20px;
+    color: #f19797;
+    letter-spacing: 1px;
+    text-shadow: 0 0 2px, 0 0 0px #b32828, 0 0 2px #B3282A, 0 0 2px #b32828;
+}
+
+.modal__choice{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal__button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-shadow: 0 0 2px, 0 0 0px #b32828, 0 0 2px #B3282A, 0 0 2px #b32828;
+    color: #f19797;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+#yes{
+    background-color: #7e1717;
+}
+#no{
+    box-shadow: inset 0 0 0 2px #7e1717;
+}
+
+.modal__input{
+    font-family: "Runtti";
+    background-color: #3e1621;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: #f19797;
+    outline: none;
+    border:none;
 }

@@ -7,15 +7,17 @@
     <title>Сокровища королевы</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="js/bot.js" defer></script>
+    <script src="js/info.js" defer></script>
     <script src="js/runes.js" defer></script>
     <script src="js/main.js" defer></script>
+    <script src="js/shop.js" defer></script>
     <script defer>
         window.scrollTo(0, 0)
         let position = { x: window.pageXOffset, y: window.pageYOffset }
         document.onscroll = () => {
             window.scrollTo(position.x, position.y)
         }
-
     </script>
 </head>
 
@@ -160,12 +162,13 @@
         </div>
 
         <div class="presents">
-            <h2>Подарки</h2>
-            <div class="presents__container">
-                
+            
+        </div>
+        <div class="shop">
+            <h2>Магазин</h2>
+            <div class="shop__container">
             </div>
         </div>
-
         
 
     </main>
