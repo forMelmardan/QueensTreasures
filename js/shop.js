@@ -32,7 +32,8 @@ document.querySelectorAll(".shop__item").forEach((item, index) => {
             document.querySelector("#yes").onclick = () => {
                 if (info.bats >= 50) {
                     sendTelegramMessage(`Моя дорогая девочка заказала ${item.querySelector("h4").textContent}! Мышек осталось: ${info.bats - 50}`).then(r => {
-
+                        console.log(r);
+                        
                         if (r){
                             item.classList.add("bought")
                             let newDishes = info.dishes

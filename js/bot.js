@@ -1,36 +1,22 @@
-
-async function sendTelegramMessage(message) {
-    const BOT_TOKEN = '7509059758:AAGKUyP4ly53cJrH1LoSG6z4gZ0PLeid7Tk';
-    const CHAT_ID = '940056063';
-
-    const TELEGRAM_API_URL = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
-
-    const payload = {
-        chat_id: CHAT_ID,
-        text: message,
-        parse_mode: 'HTML'
-    };
-
-    try {
-        const response = await fetch(TELEGRAM_API_URL, {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(payload)
-        });
-
-        const data = await response.json();
-
-        if (data.ok) {
-            alert("Успешно!!")
-            return true
-        } else {
-            alert("Технические шоколадки.... Моя любовь, попробуй через пару минуток!!")
-            return false
+async function sendTelegramMessage(text) {
+    let res = false
+    await fetch("https://6d1f294a-14fa-441a-b812-67da83a85f2e-00-1cx2smbm43ipu.worf.replit.dev/send-message", {
+        method: "POST",
+        headers: {
+            "content-type": "application/json"
+        },
+        body: JSON.stringify({
+            content: text
+        })
+    }).then(r => {
+        if (r.status == 200) {
+            res = true
         }
-    } catch (error) {
+    })
+    if (res) {
+        alert("Успешно!")
+    } else {
         alert("Технические шоколадки.... Моя любовь, попробуй через пару минуток!!")
-        return false
     }
+    return res
 }
